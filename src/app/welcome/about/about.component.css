@@ -1,0 +1,183 @@
+section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+.flex-container-article{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* ABOUT */
+
+.title-about, span{
+  color: #D1D1D1;
+  vertical-align:bottom;
+}
+
+hr{
+  width: 100px;
+}
+
+.title-about-us{
+  color: #50D0FF;
+  font-size: clamp(35px, 2vw + 0.5rem, 40px);
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.content-about-img{
+  width: 400px;
+  height: 360px;
+}
+
+
+.content-about-img img{
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* TEXT ABOUT */
+
+.content-text-about{
+  width: 400px;
+  margin-top: 45px;
+}
+
+.text-1{
+  width: 400px;
+  font-size: clamp(30px, 2vw + 0.5rem, 35px);
+  color: #3A4652;
+  margin-bottom: 40px;
+}
+
+.text-2{
+  width: 400px;
+  font-size: clamp(25px, 2vw + 0.5rem, 30px);
+  color: #3A4652;
+}
+
+/* MISSION AND VISION */
+
+.content-mission-vision {
+  width: 400px;
+  height: 410px;
+  margin-top: 45px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.button {
+  font-size: 25px;
+  width: 180px;
+  padding: 8px;
+  border: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: #50d0ff89;
+}
+
+.button.active {
+  background-color: #50d0ff;
+  color: white;
+}
+
+.content-text-mision-vision {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ececec;
+}
+
+.text-mision, .text-vision {
+  font-size: 26px;
+  padding: 5px;
+  text-align: justify;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.text-mision.active, .text-vision.active {
+  left: 0;
+  opacity: 1;
+}
+
+.text-mision:not(.active), .text-vision:not(.active) {
+  left: -100%;
+  opacity: 0;
+}
+
+/* VALUES */
+
+.container-values{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+  margin-top: 80px;
+}
+
+.title-values{
+  color: #50D0FF;
+  font-size: 40px;
+}
+
+.items-values{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.values{
+  font-size: 35px;
+  margin-top: 50px;
+  width: 300px;
+  padding: 12px;
+  background-color: #96E3FF;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width:795px){
+
+  .title-about-us{
+    margin-top: 20px;
+  }
+
+  .content-text-about,
+  .text-1,
+  .text-2 {
+    text-align: center;
+  }
+
+}

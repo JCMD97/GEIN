@@ -1,0 +1,50 @@
+.content-nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width:814px){
+  .content-nav-mobile{
+    display: block;
+    width: 100%;
+    place-items: center;
+    position: fixed;
+    bottom: 1%;
+    z-index: 10;
+  }
+
+  .content-nav-mobile:hover{
+    background-color: #4356711c;
+  }
+
+  .nav-mobile{
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 5px;
+    justify-content: space-evenly;
+  }
+
+
+  .nav-mobile > div{
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    opacity: 70%;
+    padding: 3px;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .nav-mobile > div > a{
+    display: block;
+  }
+
+  .nav-mobile > div:hover{
+    background-color: #9c9c9c;
+  }
+
+}
+
+
+

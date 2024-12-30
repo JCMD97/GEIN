@@ -1,0 +1,130 @@
+<section class="flex-container">
+
+
+  <article class="first-item-service">
+
+    <div class="title-services">
+
+      <span class="material-symbols-outlined icon_services">
+        content_paste
+      </span>
+      <b>servicios</b>
+
+      <hr>
+
+    </div>
+
+
+   <h2 class="first-title-service">
+     GESTION DE LA SALUD MENTAL
+   </h2>
+
+   <div>
+
+    <div class="box-tools">
+
+      <h3 class="text-first-service">
+        Manejo de Caja de Herramientas para salud mental del Ministerio del Trabajo
+      </h3>
+
+      @for(tool of tools; track tool){
+        <div class="item-flex">
+          <span class="material-symbols-outlined">
+            {{tool.icon}}
+          </span>
+          <p>{{ tool.text }}</p>
+        </div>
+      }
+
+
+    </div>
+
+   </div>
+
+  </article>
+
+<article class="second-item-service">
+
+  <h2 class="second-title-service">
+    GESTIÓN EDUCATIVA DE FORMACIÓN Y CAPACITACIÓN
+  </h2>
+
+  <div class="flex-box-selector">
+
+    <!-- Controles de navegación -->
+    <div class="flex-item text-selector">
+      @for(img of imgRelations; track img; let i = $index){
+        <p
+          [class.active]="currentIndex === i"
+          (click)="changeSlide(i)"
+          class="sub-item-text"
+          [title]="img.texto"
+        >
+          {{ img.texto }}
+        </p>
+      }
+
+    </div>
+
+    <!-- Imágenes del slider -->
+    <div class="flex-item hidden-img">
+      @for(img of imgRelations; track img; let i = $index){
+        <img
+        [src]="img.img"
+        [alt]="'imagen ' + i"
+        [class.active]="currentIndex === i">
+      }
+
+    </div>
+
+  </div>
+
+</article>
+
+
+  <article class="third-item-service">
+
+    <h2 class="third-title-service">
+      GRANDES ACCIONES EN EMPRESAS
+    </h2>
+
+
+
+    <div class="flex-box-selector-2">
+
+
+        <div class="flex-item-2 hidden-img-2">
+          @for (img of imgRelations_2; track img; let a = $index) {
+
+            <img
+            [src]="img.img"
+            [alt]="'imagen ' + a"
+            [class.active_2]="currentIndex_2 === a">
+
+          }
+
+
+        </div>
+
+        <div class="flex-item-2 text-selector-2">
+             @for(img of imgRelations_2; track img; let a = $index){
+              <p
+                [class.active_2]="currentIndex_2 === a"
+                (click)="changeSlide_2(a)"
+                class="sub-item-text-2"
+                [title]="img.texto"
+              >
+                {{ img.texto }}
+              </p>
+            }
+
+        </div>
+    </div>
+
+
+
+
+  </article>
+
+
+</section>

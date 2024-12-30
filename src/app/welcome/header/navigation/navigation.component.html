@@ -1,0 +1,58 @@
+
+
+<div (click)="openToggle()" class="content-icon" >
+  <span class="material-symbols-outlined icon-nav">
+    menu
+  </span>
+</div>
+
+  <nav [class]="toggle">
+
+
+    <div  class="content_nav_link content_service">
+      <a (click)="scrollTo('servicios')" class="nav_link" >
+        <span class="material-symbols-outlined icon_nav">
+         content_paste
+        </span>
+        SERVICIOS
+      </a>
+    </div>
+
+    <div class="content_nav_link content_about">
+      <a (click)="scrollTo('nosotros')" >
+        <span class="material-symbols-outlined icon_nav">
+         sentiment_satisfied
+        </span>
+        NOSOTROS
+      </a>
+    </div>
+
+    <div (click)="scrollTo('clientes')" class="content_nav_link content_clients">
+      <a class="nav_link">
+        <span class="material-symbols-outlined icon_nav">
+         group
+        </span>
+        CLIENTES
+      </a>
+    </div>
+
+    <div class="content_nav_link content_contact">
+      <a (click)="scrollTo('contacto')">
+        <span class="material-symbols-outlined icon_nav">
+         alternate_email
+        </span>
+        CONTACTO
+      </a>
+    </div>
+
+    <div class="content_nav_link content_more_information">
+      <a class="nav_link">
+        <span class="material-symbols-outlined icon_nav">
+         add
+        </span>
+        INFORMATION
+      </a>
+    </div>
+
+
+  </nav>

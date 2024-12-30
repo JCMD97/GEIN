@@ -1,0 +1,125 @@
+<section class="flex-container">
+
+
+
+
+
+  <article class="flex-container-article">
+
+    <div class="title-about">
+
+      <span class="material-symbols-outlined icon_about">
+        sentiment_satisfied
+        </span>
+      <b>Nosotros</b>
+
+      <hr>
+
+      <h2 class="title-about-us">SOBRE NOSOTROS</h2>
+
+      <div class="content-about-img">
+        <img src="img/about-team-gein.webp" alt="team-gein">
+      </div>
+
+
+    </div>
+
+    <div class="content-text-about">
+
+      <p class="text-about text-1">
+        <strong>
+          Somos Psicológos Ocupacionales con Lic. Vigente en SST.
+        </strong>
+      </p>
+
+      <p class="text-about text-2">
+        Lro vitae nisl ullamcorper, eu rhoncus leo volutpat. Fusce sit amet sem id felis consectetur fermentum quis ut nisi. Suspendisse ac arcu ante. ermentum quis ut nisiullamcorper,
+      </p>
+
+    </div>
+
+    <div class="content-mission-vision">
+
+      <div class="content-buttons">
+        <button
+          class="button button-mission"
+          [class.active]="selectedIndex === 0"
+          (click)="changeSlide(0)">
+          MISIÓN
+        </button>
+
+        <button
+          class="button button-vision"
+          [class.active]="selectedIndex === 1"
+          (click)="changeSlide(1)">
+          VISIÓN
+        </button>
+      </div>
+
+      <div class="content-text-mision-vision">
+        <p
+          class="text-mision"
+          [class.active]="selectedIndex === 0">
+          Ser la empresa líder en Colombia y en las
+          regiones, destacándonos como gestores
+          y promotores tanto en el ámbito social
+          como empresarial, enfocados en ofrecer
+          servicios de atención en medicina
+          preventiva y del trabajo, con especial
+          énfasis en el contexto psicosocial
+          ocupacional.
+        </p>
+
+        <p
+          class="text-vision"
+          [class.active]="selectedIndex === 1">
+          Gestión y Educación Integral SAS, se
+          enfoca en mejorar y mantener las
+          condiciones de salud, trabajo, salud
+          mental y calidad de vida de sus
+          trabajadores. Nos destacamos como
+          líderes en procesos de atención
+          psicosocial y organizacional, con el
+          objetivo de prevenir enfermedades
+          laborales y accidentes de trabajo.
+        </p>
+      </div>
+
+    </div>
+
+
+
+  </article>
+
+  <article class="container-values">
+
+    <h2 class="title-values">VALORES</h2>
+
+    <div class="items-values">
+
+      <p class="values">Respeto</p>
+
+      <p class="values">Confidencialidad</p>
+
+      <p class="values">Calidad </p>
+
+      <p class="values">Responsabilidad</p>
+
+      <p class="values">Garantía</p>
+
+      <p class="values">Cumplimiento</p>
+
+      <p class="values">Eficiencia</p>
+
+      <p class="values">Eficacia</p>
+
+      <p class="values">Excelencia</p>
+
+    </div>
+
+
+  </article>
+
+</section>
+
+

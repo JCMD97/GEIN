@@ -1,0 +1,35 @@
+section{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+
+.flex-container-clients{
+  margin:10px 30px 0 30px;
+}
+
+.title-clients{
+  color: #3A4652;
+  font-size: 60px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+
+
+.content-image-clients{
+  columns: 4 80px;
+  column-gap: 10px;
+}
+
+img{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  outline: 1px solid #3a46522e;
+}

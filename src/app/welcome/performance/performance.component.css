@@ -1,0 +1,287 @@
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: repeat(2,650px);
+  justify-content: space-evenly;
+  row-gap: 100px;
+  margin: 50px;
+}
+
+.item-productivity{
+  grid-column: 1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* text-productivity */
+
+
+.text-productivity{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #848484;
+}
+
+.content-icon-text{
+  text-align: center;
+}
+
+.item-productivity p{
+  width: 400px;
+  color: black;
+  font-size: 30px;
+}
+
+.item-productivity strong{
+  color: #50D0FF;;
+}
+
+/* team-performance */
+
+.item-team{
+  grid-column: 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.item-team img{
+  width: 400px;
+  z-index: 1;
+}
+
+.sub-item-team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  padding-top: 250px;
+  border-radius: 50px;
+  background-color: #f9f6f685;
+}
+
+.sub-item-team-icon{
+  background-color: #FCFCFC;
+  padding: 6px;
+  border-radius: 70%;
+  position: absolute;
+  top: 28%;
+  z-index: 2;
+}
+
+.sub-item-team p{
+  color: #357B94;
+  width: 400px;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+
+/* item-mental-health */
+
+.item-mental-health{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.item-mental-health img{
+  width: 400px;
+  z-index: 1;
+}
+
+.sub-item-mental-health{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 250px;
+  border-radius: 50px;
+  background-color: #f9f6f685;
+}
+
+.sub-item-mental-health-icon{
+  background-color: #FCFCFC;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 28%;
+  z-index: 2;
+}
+
+.sub-item-mental-health-icon span{
+  font-size: 50px;
+  color: #4A4A4A;
+}
+
+.sub-item-mental-health p{
+  color: #357B94;
+  width: 400px;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+
+
+
+/* item-prevention */
+.item-prevention{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text-prevention{
+  text-align: center;
+  width: 600px;
+  font-size: 40px;
+  margin-top: -50px;
+  color: #848484;
+}
+
+.prevention-icon{
+  text-align: center;
+}
+
+.prevention-icon span{
+  font-size: 200px;
+  color: #4A4A4A;
+}
+
+.item-prevention p{
+  width: 400px;
+  color: black;
+  font-size: 30px;
+}
+
+.item-prevention strong{
+  color: #50D0FF;;
+}
+
+
+/* MEDIA QUERIES!!! */
+
+@media screen and ( max-width: 1328px ) {
+
+  .grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0;
+  }
+
+
+
+  .item-productivity{
+    height: 650px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item-team{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item-mental-health{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .item-prevention{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+}
+
+
+@media screen and ( max-width: 610px ) {
+  .sub-item-team, .sub-item-mental-health{
+    width: 400px;
+  }
+}
+
+
+
+@media screen and ( max-width: 600px ) {
+
+  .text-productivity{
+    width: 400px;
+    font-size: clamp(30px, 2vw + 0.5rem, 40px);
+  }
+
+  .item-productivity p{
+    text-align: center;
+    font-size: clamp(25px, 2vw + 0.5rem, 30px);
+  }
+
+
+  .item-team img{
+    width:370px;
+    z-index: 1;
+  }
+
+  .sub-item-team-icon{
+    top: 20%;
+  }
+
+  .sub-item-team p{
+    width: 370px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+
+
+  .item-mental-health img{
+    width: 370px;
+  }
+  .sub-item-mental-health-icon{
+    top: 20%;
+  }
+  .sub-item-mental-health p{
+    text-align: center;
+    width: 370px;
+    font-size: 26px;
+  }
+
+
+
+  .text-prevention{
+    width: 370px;
+    font-size: clamp(30px, 2vw + 0.5rem, 40px);
+  }
+
+  .prevention-icon{
+    text-align: center;
+  }
+
+  .prevention-icon span{
+    font-size: 150px;
+  }
+
+  .item-prevention p{
+    text-align: center;
+    width: 370px;
+    color: black;
+    font-size: 26px;
+  }
+
+}

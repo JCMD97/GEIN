@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  background:rgba(195, 229, 244, 0.045);
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track{
+  background-color: #D1D1D1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #9b9e9e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+

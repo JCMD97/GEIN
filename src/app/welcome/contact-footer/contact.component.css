@@ -1,0 +1,55 @@
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 0;
+  margin-top: 50px;
+  background-color: #c0f6fd69;
+}
+
+img{
+  display: inline-block;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+p{
+  display: inline-block;
+  vertical-align:super;
+  margin-left: 5px;
+}
+
+
+.contact{
+  text-align: center;
+}
+
+.icon-gmail{
+  height: 24px;
+  width: 24px;
+  margin-left: 25px;
+}
+
+li{
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.text-moodle, .link-moodle{
+  font-size: 60px;
+  font-weight: 300;
+  vertical-align: middle;
+}

@@ -1,0 +1,42 @@
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+
+h2{
+  color: #535657;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  font-size: clamp(12px, 1.2vw + 0.5rem, 45px);
+}
+
+.note{
+  color: #727272;
+  font-size: clamp(12px, 1.2vw + 0.5rem, 45px);
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+
+.note-about{
+  color: #727272;
+  font-size: clamp(12px, 1.2vw + 0.5rem, 45px);
+  width: 25%;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+
+img{
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+

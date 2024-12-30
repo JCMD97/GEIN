@@ -1,0 +1,52 @@
+header{
+  display: flex;
+  width: 100%;
+  padding-bottom: 2px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.621);
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+
+.brand_title{
+  color: #83DEFF;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.brand_text{
+  font-size: 12px;
+  margin: -10px 0 0 2px;
+}
+
+
+.content_moodle{
+  width: 100px;
+}
+
+.link_moodle{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #3A4652;
+}
+
+
+@media screen and (max-width: 815px) {
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav{
+    order: 3;
+  }
+
+}
